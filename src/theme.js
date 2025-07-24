@@ -1,10 +1,10 @@
 // src/theme.js
-import { createTheme } from '@mui/material/styles';
-import '@fontsource/ibm-plex-sans-arabic';
+import { createTheme } from "@mui/material/styles";
+import "@fontsource/ibm-plex-sans-arabic";
 
 const theme = createTheme({
   typography: {
-    fontFamily: 'IBM Plex Sans Arabic, sans-serif',
+    fontFamily: "IBM Plex Sans Arabic, sans-serif",
   },
 });
 
