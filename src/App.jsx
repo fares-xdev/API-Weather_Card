@@ -22,7 +22,9 @@ function App() {
   const { t, i18n } = useTranslation();
 
   const [dateTime, setDateTime] = useState("");
-  const [direction, setDirection] = useState("rtl");
+  const [direction, setDirection] = useState(
+    i18n.language === "ar" ? "rtl" : "ltr"
+  );
 
   const [temp, setTemp] = useState({
     number: null,
@@ -73,7 +75,7 @@ function App() {
         });
       })
       .catch((error) => console.error(error));
-  }, []);
+  }, [apiKey]);
 
   return (
     <div dir="rtl" className="App">
