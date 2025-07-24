@@ -1,0 +1,14 @@
+{
+  "weather": {
+    "clear sky": "سماء صافية",
+    "few clouds": "سحب قليلة",
+    "scattered clouds": "سحب متفرقة",
+    "broken clouds": "غيوم متقطعة",
+    "shower rain": "زخات مطر",
+    "rain": "مطر",
+    "thunderstorm": "عاصفة رعدية",
+    "snow": "ثلج",
+    "mist": "ضباب"
+  }
+}
+
