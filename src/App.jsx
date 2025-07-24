@@ -56,10 +56,11 @@ function App() {
   };
 
   // Fetch weather data on component mount
+  const apiKey = import.meta.env.VITE_WEATHER_API_KEY;
   useEffect(() => {
     axios
       .get(
-        "https://api.openweathermap.org/data/2.5/weather?lat=30.03&lon=31.23&appid=26a74d9bb7a02369332ff33485eb246e"
+        `https://api.openweathermap.org/data/2.5/weather?lat=30.03&lon=31.23&appid=${apiKey}`
       )
       .then((res) => {
         const data = res.data;
